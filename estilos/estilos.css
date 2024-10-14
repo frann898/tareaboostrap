@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.contenedor{
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas: "header header"
+                         "cabezera cabezera"                        
+                         "cuerpo   nav"
+                         
+                         "footer footer"
+    
+    ;
+}
+.header{
+    background-color: cadetblue;
+    
+    grid-area: header;
+}
+.cabezera{
+    background-color: coral;
+    grid-area: cabezera;
+}
+.cuerpo{
+    background-color: (59, 59, 59);
+    
+    grid-area: cuerpo;
+}
+.nav{
+    background-color: rgb(231, 231, 231);
+    grid-area: nav;
+}
+.footer{
+    background-color: rgb(107, 107, 107);
+    grid-area: footer;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
